@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[12]="hello world";
+    char b[12]="hello123d.fh";
+    //char *c;
+    printf("a : %p \n",a);
+    printf("b : %p \n",b);
+
+    printf("a  : %ld\n ",sizeof(a));
+    printf("b  : %ld \n  ",sizeof(b));
+
+    printf("[+] change the value : ");
+    scanf("%s",a);
+    b[3]='g';
+  char *c=&a[strlen(a)+1];
+
+
+    printf("a  : %s \n ",a);
+    printf("b  : %s \n  ",b); 
+    printf("c  : %s \n  ",c); 
+
+    printf(" a value %ld \n",strlen(a));//printing
+    printf(" b value %ld \n",strlen(b));
+
+}
